@@ -17,18 +17,18 @@ In summary these two deep neural structure are as below (See model.py):
     - Hidden: (132, 128)  
     - Output: (128, 1)                  
 
-DDPG Algorithm
+### DDPG Algorithm
 The Agent is included in ddpg_agent algorithm and ipon reaching a reward value of 33.0, it returns
 the score and the final episode.
 
 ### Hyperparameters
-BUFFER_SIZE = int(1e5)  # replay buffer size
-BATCH_SIZE = 128        # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR_ACTOR = 1e-4         # learning rate of the actor 
-LR_CRITIC = 2e-4        # learning rate of the critic
-WEIGHT_DECAY = 0.0001   # L2 weight decay
+- BUFFER_SIZE = int(1e5)  # replay buffer size
+- BATCH_SIZE = 128        # minibatch size
+- GAMMA = 0.99            # discount factor
+- TAU = 1e-3              # for soft update of target parameters
+- LR_ACTOR = 1e-4         # learning rate of the actor 
+- LR_CRITIC = 2e-4        # learning rate of the critic
+- WEIGHT_DECAY = 0.0001   # L2 weight decay
 
 
 ## Results
