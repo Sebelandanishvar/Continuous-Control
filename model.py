@@ -23,9 +23,7 @@ def __init__(self, state_size, action_size, seed, fc1_units=128,
         """
         super(Actor, self).__init__()
         self.seed = torch.manual_seed(seed)
-        # source: The low-dimensional networks had 2 hidden layers
         self.fc1 = nn.Linear(state_size, fc1_units)
-        # applying a Batch Normalization on the first layer output
         self.bn1 = nn.BatchNorm1d(fc1_units)
         self.fc2 = nn.Linear(fc1_units, fc2_units)
         self.fc3 = nn.Linear(fc2_units, action_size)
